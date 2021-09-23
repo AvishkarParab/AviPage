@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>About me</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;
+        }
+        body{
+            position: relative;
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header{
+            position: absolute;
+            width: 85%;
+            margin-top: 10px;
+            left: 7%;
+            background-color: yellowgreen;
+            display:inline-flex;
+            height: 50px;
+            border-radius: 7px;
+        }
+        header .about{
+            position: absolute;
+            left: 3%;
+            align-self: center;
+        }
+        header .about h1{
+            color: crimson;
+            animation: rot 3s infinite ;
+            transition: ease;
+        }
+        @keyframes rot{
+            100%{transform: rotateY(360deg);}
+        }
+        header .menu{
+            position: absolute;
+            right: 40px;
+            align-self: center;
+
+        }
+        header .menu a{
+            text-decoration: none;
+            display:inline-block;
+            margin-left: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            color: darkblue;
+		    transition: all .5s ease;
+        }
+        header .menu a:hover{
+            color: yellow;
+		font-weight: bold;
+		transition: all .2s ease;
+        font-size: 18px;
+		padding-bottom: 2px;
+		border-bottom: 2px solid red;
+		border-width: 50%;
+        }
+        section{
+            border-radius: 7px;
+            border: 2px solid springgreen;
+            position: relative;
+            margin-top: 55px;
+            width: 85%;
+            left: 7%;
+            height: 85vh;
+            padding: 20px;
+            background:linear-gradient(to bottom,rgba(20, 228, 107, 0.774),rgba(55, 12, 112, 0.849));
+
+        }
+        .cont{
+              position: absolute;
+              top: 25%;
+              right: 7%;
+              animation: fadeInTopRight 1.5s 1.2s;
+              /* border: 1px solid red; */
+
+        }
+        ul.info{
+            /* position: absolute; */
+            font-family: sans-serif;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            color:rgb(4, 0, 255);
+            list-style-type:none;
+            font-size: 40px;
+           
+            right: 10%;
+        }
+        .soc{
+            position: absolute;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            color:white;
+            bottom: 5px;
+            height: 40px;
+            width: 93%;
+            /* border: 1px solid blue; */
+            padding: 10px;
+            
+        }
+        section img{
+            width: 50%;
+            height: 350px;
+            box-shadow: 7px 5px 4px  black;
+            animation: zoomInRight 1.5s .7s;
+        }
+        .soc span:nth-child(1){
+            position: absolute;
+            animation: rubberBand 1.2s  3.5s ;
+            margin-left: 3%;
+        }
+        .soc span:nth-child(2){
+            position: absolute;
+            animation: rubberBand 1.2s  7.5s ;
+            left:85%;
+        }
+        .soc span:nth-child(3){
+            position: absolute;
+            animation: rubberBand 1.2s  5.5s ;
+            /* top: 25px; */
+            left: 40%;
+
+        }
+        .soc .fab{
+              /* font-size: 20px; */
+              /* color: black; */
+        }
+        @media screen and (max-width:500px){
+            header .about h1{
+            font-size: 23px;
+        }
+
+            header .menu{
+            right: 20px;
+
+        }
+        header .menu a{
+            margin-left: 14px;
+            font-size: 16px;
+        }
+        .cont{
+              position: absolute;
+              top: 65%;
+              left: 27%;
+              color: red;
+              /* border: 1px solid red; */
+
+        }
+
+            ul.info{
+            font-family: sans-serif;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            color:rgb(32, 250, 12);
+            list-style-type:none;
+            font-size: 26px;
+        }
+        .soc{
+            position: absolute;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            color:black;
+            bottom: 5px;
+            height: 50px;
+            width: 93%;
+            /* border: 1px solid blue; */
+            padding: 2px;
+            
+        }
+            section img{
+            width: 100%;
+            height: 300px;
+            box-shadow: 7px 5px 4px  black;
+        }
+        .soc span:nth-child(1){
+            position: absolute;
+            left: 2px;
+        }
+        .soc span:nth-child(2){
+            position: absolute;
+            left:60%;
+        }
+        .soc span:nth-child(3){
+            position: absolute;
+            top: 25px;
+            left: 20%;
+
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="about"><h1>About Me</h1></div>
+       <div class="menu"> 
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+      </div>
+    </header><br/>
+    <section>
+        <img src="Avi.jpg" alt="no image">
+        <div class="cont">
+           <ul class="info">
+               <li>AVISHKAR PARAB</li>
+               <li>Studies at GEC</li>
+               <li>Coder,Gamer</li>
+           </ul>
+           
+        </div><br/>
+        
+        <div class="soc">
+            <span><i class="fab fa-instagram"></i></i>  avishkar_parab_31</span>
+            <span><i class="fas fa-phone-alt"></i>  8208093533</span>
+            <span><i class="fas fa-envelope"></i>  aviparab72733@gmail.com</span>
+           </div>
+    </section>
+    
+</body>
+</html>
